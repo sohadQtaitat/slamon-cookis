@@ -1,68 +1,217 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
- <title>lab7</title>
- <link rel="stylesheet" href="css/sohad.css">
-</head>
-<body background="https://www.swishschool.com/w/wp-content/uploads/2018/03/%D8%AE%D9%84%D9%81%D9%8A%D8%A7%D8%AA-%D9%85%D9%88%D8%A8%D8%A7%D9%8A%D9%84-hd-4.jpg">
- <header  > </header>
- <h1 style="text-align: center; color: rgb(218, 21, 135); size: 100%; height: 50%; width: 50%; text-align: center;"> Lab 7 - Sohad Qtaitat</h1>
- <main id="main-content"></main>
- <link rel="stylesheet" href="sohad.css">
- <script src="js/app.js"></script>
-</body>
-</html>
-
-
-
 <!DOCTYPE html>
 <html>
+
 <head>
- <title>lab8</title>
- <link rel="stylesheet" href="css/sohad.css">
+	<title>Cookies Shop Registration Form</title>
+<link rel="stylesheet" href="css/reg.css">
+
+
 </head>
-<<<<<<< HEAD
-<body id="content-area">
-   <header>
-   </header>
-   <footer> Copyright 2019   </footer>
-   <script src="js/app.js"></script>
-=======
-
-<body background="https://www.swishschool.com/w/wp-content/uploads/2018/03/%D8%AE%D9%84%D9%81%D9%8A%D8%A7%D8%AA-%D9%85%D9%88%D8%A8%D8%A7%D9%8A%D9%84-hd-4.jpg">
- <header  > </header>
- <h1 style="text-align: center; color: rgb(218, 21, 135); size: 100%; height: 50%; width: 50%; text-align: center;"> Lab8 creat form - Sohad Qtaitat</h1>
- <main >
-
-    <form id="addShopForm">
-        <fieldset>
-            <legend> Shop information Gate </legend>
-
-           <p><label>Type Your location  </label>
-            <input type ="text" name="location"></p> 
-
-            <p><label>Type Your max number of customer </label>
-            <input type="number" name="max"></p>
-            
-           <p><label>Type Your min number of customer</label>
-            <input type="text" name="min"></p> 
-            
-            
-          <p> <label>Type your Avarge Sales</label>
-            <input type="text" name="avgSales"></p> 
-        </fieldset>
-
-        <button type="submit">Submit</button>
-    </form>
 
 
+
+
+<header>
+
+        <nav>
+                <img src="pic/fish.jpg">
+
+                <ul>
+                  <li>
+                    <a href="address.html">Shops Location </a>
+                  </li>
+
+                  <li>
+                    <a href="contact.html">contact & Open Information </a>
+                  </li>
+                  <li>
+                    <a href="pic.html">Pictuers</a>
+                  </li>
+                  <li>
+                        <a href="sale.html">Shop Form</a>
+                      </li>
+                 <li style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; width: 380px; height: 100px;font-size: 200%; color: tomato;"> Cookies Shop Home Page</li>
+
+                </ul>
+
+              </nav>
+        
+</header>
+
+<p> 
+    <img src="pic/family.jpg" alt="Cookies customer" style="align-content:flex-end; width: 100%; height: 300px;">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+		
+	$(document).ready(function(){
+  		$("#Terms").on("click", function(){
+   		 $("#Termss").attr('checked', true);
+  		});
+	});
+
+</script>
+
+
+
+<body background="#652">
+<div class="container">	
+
+	<div class="header">
+	   <header>
+		<h2>Cookies Shop Registration Form <h2>
+	   </header>
+	</div>
+
+<form name="registration" onsubmit="return RegValidation();"  action="homepage.html" >
+
+
+
+<div>
+    <div class="col-25">	
+		<label class="label" for="user">User name</label>
+	</div>
+	<div  class="col-75">
+		<input  class="input" type="email" id="email" size="40" >
+		<span id="email_error" class="error"></span>
+	</div>
+</div>
+
+
+<div>
+
+    <div class="col-25">
+		<label class="label" for="password">Password</label>
+	</div>
+	<div class="col-75">
+		<input class="input" type="Password" id="Password" size="40" >
+		<span id="Pass_error" class="error"></span>
+	</div>
+</div>
+
+
+<div>
+	<div class="col-25">
+		<label class="label" for="ConfirmPassword">Confirm password</label> 
+	</div>
+
+	<div class="col-75">
+		<input class="input" type="Password" id="confirmPassword" size="40" ><br>
+		<span id="CPass_error" class="error"></span>
     </div>
-<div id="main-content"></div>
- </main>
->>>>>>> formlab8
+</div>
+
+
+<div>
+    <div class="col-25">
+		<label class="label" for="Country">Country</label>
+    </div>
+
+
+
+
+    <div class="col-75">
+		<select  class="input" id="Country" onchange="populate(this.id,'City')">
+			<option value="">select</option>
+			<option value="1">Seattle</option>
+            <option value="2">Tokyo</option>
+            <option value="3">Dubai</option>
+            <option value="4">Paris</option>
+            <option value="5">Lima</option>
+
+	    </select><br>
+	    <span id="Country_error" class="error"></span>
+	</div>	
+</div>	
+
+
+
+
+<div>
+    <div class="col-25">	
+ 		<label class="label" for="City">City</label>
+ 	</div>
+
+	<div class="col-75">
+		<select class="input" id="City">			
+		</select><br>
+		<span id="City_error" class="error"></span>
+	</div>	
+</div>
+
+
+
+
+<div>
+    <div class="col-25">
+		<label class="label"  for="Address">Address</label>
+ 	</div>
+
+    <div class="col-75">
+		<input class="input" type="text" id="theAddress"   ><br>
+		<span id="address_error" class="error"></span>
+    </div>
+</div>
+
+
+
+
+
+
+<div>
+ 	<div class="col-25">
+		<label class="label" for="Mobile">Mobile</label>
+	</div>
+
+    <div class="col-75">
+		<input class="input" type="tel" id="Mobile" pattern="[0-9]{10}" ><br><br><br>
+		<span id="mobile_error" class="error"></span>
+    </div>
+</div>
+
+
+
+
+
+
+<div>
+	<div >
+		<input class="label" type="checkbox" id="Termss"  name="terms" required="true">
+    </div>
+	<div >
+		<label id="Terms" for="terms" style="align-content: center;" >Accept the terms & conditions.</label><br><br>
+	</div>
+</div>
+
+
+
+
+
+<form name="formB" id="form1" method="post" onsubmit="return redirect()" href="sale.html">  
+    <input type="submit" class="button" name="order" id="order" value="Registration In Cookies Shops"  >
+  
+        <a href="sale.html" style="font-size: 60px; color: teal;"> Go</a>
+      
+
+  </form>
+
+
+
+
+</form>	
+</div>
 </body>
 </html>
-
- -->
-
-
