@@ -95,6 +95,8 @@ header nav {
     display: inline-block;
     margin-top: 40px;
     margin-right: 75px;
+    font-family: 'Courgette', cursive; font-size: 25px;
+
 
  }
 
@@ -127,6 +129,8 @@ header nav {
           opacity: .9;
           color: white;
           margin-top:5px;
+          font-family: 'Courgette', cursive; font-size: 25px;
+
       }
 
       #Terms{

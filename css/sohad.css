@@ -13,14 +13,20 @@ td, th {
 border: 1px solid #f805bb;
 text-align: left;
 padding: 5px;
+font-family: 'Staatliches', cursive;
+
 }
 
 tr {
 background-color: #0d94e2;
+font-family: 'Staatliches', cursive;
+
 }
 
 h1{
   text-align: center;
   border-block: 5px;
   border-block-color: pink;
+  font-family: 'Staatliches', cursive;
+
 }
